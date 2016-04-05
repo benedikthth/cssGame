@@ -1,0 +1,18 @@
+@keyframes stopSlide {
+  0% {left: 1000px; }
+
+  10% {left: -3000px; }
+  100% {left: -3000px; }
+}
+
+.StopSign {
+  position: absolute;
+
+  width: em(1024px)+ em(400px);
+  background-image: url(/images/sign2.png);
+  background-repeat: no-repeat;
+  left: 1000px;
+  bottom: -260px;
+  height: 500px;
+  animation:stopSlide 20s linear infinite;
+}

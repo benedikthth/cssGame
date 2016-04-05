@@ -1,0 +1,15 @@
+
+@keyframes groundSlide {
+  0% {left:0px; }
+  100% {left:-75px; }
+}
+
+.Floor{
+  position: absolute;
+  bottom: 0;
+  width: em(1024px)+ em(75px);
+  height: 41px;
+  background-image: url(/images/ground2.png);
+  background-repeat: repeat-x;
+  animation: groundSlide 1s linear infinite;
+}

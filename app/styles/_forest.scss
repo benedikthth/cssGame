@@ -1,0 +1,14 @@
+@keyframes forestSlide {
+  0% {left:0px; }
+  100% {left:-150px; }
+}
+
+.Forest {
+  position: absolute;
+
+  width: em(1024px)+ em(150px);
+  background-image: url(/images/forest.png);
+  bottom: 12px;
+  height: 100px;
+  animation:forestSlide 4s linear infinite;
+}

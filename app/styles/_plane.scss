@@ -1,0 +1,17 @@
+@keyframes planeFly {
+  0% {left: -100px; top:80px;}
+  10% {left: 600px; top:-60px; }
+  100% {left: 600px; top:-60px; }
+}
+
+.Plane {
+  position: absolute;
+
+  width: em(1024px)+ em(400px);
+  background-image: url(/images/plane.gif);
+  background-repeat: no-repeat;
+  left: 1000px;
+  bottom: -260px;
+  height: 500px;
+  animation:planeFly 60s linear infinite;
+}

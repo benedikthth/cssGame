@@ -1,0 +1,14 @@
+@keyframes cloudSlide {
+  0% {left:0px; }
+  100% {left:-400px; }
+}
+
+.Clouds {
+  position: absolute;
+
+  width: em(1024px)+ em(400px);
+  background-image: url(/images/clouds.png);
+  bottom: 100px;
+  height: 100px;
+  animation:cloudSlide 40s linear infinite;
+}
