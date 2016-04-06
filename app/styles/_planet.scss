@@ -1,0 +1,22 @@
+@keyframes PlanetSlide {
+  0%{
+    transform: translate3d(em(1000px), 0, 0);
+  }
+  100%{
+    transform: translate3d(em(-200px), 0, 0);
+  }
+}
+@keyframes drawArc {
+    0% { transform: rotate(0deg) translateX(1700px) rotate(0deg) ;}
+    100%{ transform: rotate(-180deg) translateX(1700px) rotate(180deg);  }
+}
+.Planet {
+  position: absolute;
+  background-image: url(/images/iplanet.png);
+  background-repeat: no-repeat;
+  top: 1700px;
+  left: 450px;
+  width: em(100px);
+  height: em(300px);
+  animation: drawArc 30s linear infinite;
+}

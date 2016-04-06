@@ -1,7 +1,13 @@
 @keyframes planeFly {
-  0% {left: -100px; top:80px;}
-  10% {left: 600px; top:-60px; }
-  100% {left: 600px; top:-60px; }
+  0% {
+    transform: translate3d(em(0px), em(0px), 0);
+  }
+  10% {
+    transform: translate3d(em(800px), em(-410px), 0);
+  }
+  100% {
+    transform: translate3d(em(800px), em(-410px), 0);
+  }
 }
 
 .Plane {
@@ -10,8 +16,15 @@
   width: em(1024px)+ em(400px);
   background-image: url(/images/plane.gif);
   background-repeat: no-repeat;
-  left: 1000px;
+  left: em(-150px);
   bottom: -260px;
   height: 500px;
-  animation:planeFly 60s linear infinite;
+  animation:planeFly 30s linear infinite;
 }
+/*
+@keyframes planeFly {
+  0% {left: -100px; top:80px;}
+  10% {left: 600px; top:-60px; }
+  100% {left: 600px; top:-60px; }
+}
+*/

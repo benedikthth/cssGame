@@ -1,5 +1,5 @@
 
-.Player {
+.Player{
     // Absolutely position entities at 0,0 and use transform to
     // move it around.
     position: absolute;
@@ -7,6 +7,18 @@
     left: 0;
     width: em(50px);
     height: em(50px);
-    
+
     background: url(/images/player_s.gif);
+}
+
+.normal.scared {
+  background: url(/images/playerscared.gif);
+}
+
+.Player.special {
+  background: url(/images/player_d.gif);
+}
+
+.Player.badBoy {
+  background: url(/images/player_b.png);
 }

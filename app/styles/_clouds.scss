@@ -1,6 +1,10 @@
 @keyframes cloudSlide {
-  0% {left:0px; }
-  100% {left:-400px; }
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(em(-400px), 0, 0);
+  }
 }
 
 .Clouds {
@@ -12,3 +16,9 @@
   height: 100px;
   animation:cloudSlide 40s linear infinite;
 }
+/*
+@keyframes cloudSlide {
+  0% {left:0px; }
+  100% {left:-400px; }
+}
+*/

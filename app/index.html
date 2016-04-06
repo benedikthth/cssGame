@@ -9,6 +9,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link rel="shortcut icon" href="/favicon.ico">
+        <link href='https://fonts.googleapis.com/css?family=Freckle+Face&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
@@ -24,14 +25,31 @@
         <![endif]-->
 
         <div class="GameCanvas">
+            <button id="muter"> Mute </button>
+            <div class="Stars"></div>
+            <div class="Planet"></div>
             <div class="Clouds"></div>
             <div class="Plane"></div>
             <div class="Town"></div>
             <div class="Forest"></div>
+            <div class="Pipe" id="pipeOne">
+              <div class="pipeConnector"></div>
+              <div class="pipeGap"></div>
+              <div class="pipeConnector lower"></div>
+            </div>
             <div class="Floor"></div>
             <div class="StopSign"></div>
-            <div class="Player"></div>
+            <div class="Player normal"></div>
             <div class="Scoreboard">
+                <div id="scoreShow">
+                </div>
+
+                <button class="Scoreboard-restart">
+                    <span class="Scoreboard-restartText">D mode</span>
+                </button>
+                <button class="Scoreboard-restart">
+                    <span class="Scoreboard-restartText">B mode</span>
+                </button>
                 <button class="Scoreboard-restart">
                     <span class="Scoreboard-restartText">Restart</span>
                 </button>
@@ -50,6 +68,7 @@
         <script src="scripts/game.js"></script>
         <script src="scripts/player.js"></script>
         <script src="scripts/utils.js"></script>
+        <script src="scripts/pipe.js"></script>
         <!-- endbuild -->
 </body>
 </html>

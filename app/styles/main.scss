@@ -1,9 +1,13 @@
 // bower:scss
 // endbower
 
+
+
 body {
     background: black;
+    font-family: 'Freckle Face', cursive;
 }
+
 
 .browsehappy {
     margin: 0.2em 0;
@@ -21,3 +25,6 @@ body {
 @import '_stopsign';
 @import '_town';
 @import '_plane';
+@import '_pipe';
+@import '_stars';
+@import '_planet';

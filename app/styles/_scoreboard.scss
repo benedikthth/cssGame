@@ -1,3 +1,6 @@
+#scoreShow{
+	font-size: 50px;
+}
 
 .Scoreboard {
 	position: absolute;
@@ -24,7 +27,7 @@
 }
 
 .Scoreboard-restart {
-	margin-top: em(200px);
+	margin-top: em(180px);
 
 	font-size: inherit;
 	padding: em(4px) em(15px);
@@ -35,7 +38,9 @@
 
 .Scoreboard-restartText {
 	// NOTICE: You'll lose 10% of your score if you don't change this style!
-	font-family: 'Comic Sans MS', serif;
+	// really? please do tell me if that's true because fuck, i dont want that shit at all.
+	//yo -> benedikthth@gmail.com
+	font-family: 'Freckle Face', cursive;
 	font-size: em(24px);
 	color: white;
 }

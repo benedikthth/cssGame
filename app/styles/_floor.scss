@@ -1,6 +1,29 @@
 
 @keyframes groundSlide {
-  0% {left:0px; }
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(em(-75px), 0, 0);
+  }
+}
+
+.Floor{
+  position: absolute;
+  bottom: 0;
+  width: em(1024px)+ em(75px);
+  height: 41px;
+  background-image: url(/images/ground2.png);
+  background-repeat: repeat-x;
+  animation: groundSlide 0.5s linear infinite;
+}
+/*
+backup
+@keyframes groundSlide {
+  0% {
+    left:0px;
+
+  }
   100% {left:-75px; }
 }
 
@@ -13,3 +36,4 @@
   background-repeat: repeat-x;
   animation: groundSlide 1s linear infinite;
 }
+*/

@@ -1,0 +1,25 @@
+
+.Pipe {
+  position: absolute;
+  height: em(576px);
+  width: em(100px);
+}
+
+.pipeConnector {
+  background-image: url(/images/pipeBody.png);
+  background-repeat: repeat-y;
+}
+
+.pipeGap{
+  position: absolute;
+  background-image: url(/images/pipeGap.png);
+  height: em(236px);
+  width: em(100px);
+  background-repeat: repeat-y;
+}
+
+.lower {
+  top: em(236px);
+  position: relative;
+  height: 100%;
+}

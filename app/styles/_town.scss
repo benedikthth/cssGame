@@ -1,6 +1,10 @@
 @keyframes townSlide {
-  0% {left:0px; }
-  100% {left:-600px; }
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(em(-600px), 0, 0);
+  }
 }
 
 .Town {
@@ -12,3 +16,9 @@
   height: 100px;
   animation:townSlide 30s linear infinite;
 }
+/*
+@keyframes townSlide {
+  0% {left:0px; }
+  100% {left:-600px; }
+}
+*/
